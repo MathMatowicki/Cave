@@ -21,9 +21,10 @@ class Preload extends Phaser.Scene {
         this.createLoadingBar();
         //spritesheets
         this.load.setPath(this.URL + 'assets/img');
-        this.load.spritesheet('spr-hero', 'spr-hero.png', { frameWidth: 16, frameHight: 16, endFrame: 4, margin: 1, spacing: 2 });
-        this.load.spritesheet('spr-slime', 'spr-slime.png', { frameWidth: 16, frameHight: 16, endFrame: 4, margin: 1, spacing: 2 });
-        this.load.spritesheet('spr-spider', 'spr-spider.png', { frameWidth: 16, frameHight: 16, endFrame: 4, margin: 1, spacing: 2 });
+        this.load.spritesheet('tileset', 'tileset-32px.png', { frameWidth: 32, frameHight: 32, endFrame: 19, margin: 2, spacing: 4 });
+        this.load.spritesheet('spr-hero', 'spr-hero.png', { frameWidth: 32, frameHight: 32, endFrame: 4, margin: 2, spacing: 4 });
+        this.load.spritesheet('spr-slime', 'spr-slime.png', { frameWidth: 32, frameHight: 32, endFrame: 4, margin: 2, spacing: 4 });
+        this.load.spritesheet('spr-spider', 'spr-spider.png', { frameWidth: 32, frameHight: 32, endFrame: 4, margin: 2, spacing: 4 });
 
         this.load.on('progress', this.onProgress, this);
     }
