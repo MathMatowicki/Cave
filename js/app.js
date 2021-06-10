@@ -19,11 +19,11 @@ App.prototype.start = function () {
         type: Phaser.AUTO,
         parent: 'phaser-app',
         title: 'Cave',
-        width: 360 / 2,
-        height: 640 / 2,
+        width: 360,
+        height: 640,
         scene: scenes,
         pixelArt: true,
-        backgroundColoer: '0xf4cca1'
+        backgroundColor: '0x000000'
     };
     //Create game
     let game = new Phaser.Game(config);
@@ -35,7 +35,7 @@ App.prototype.start = function () {
         height: config.height,
         centerX: Math.round(0.5 * config.width),
         centerY: Math.round(0.5 * config.height),
-        tile: 16
+        tile: 32
     }
     game.sound_on = true;
 }
