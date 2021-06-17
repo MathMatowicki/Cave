@@ -55,6 +55,7 @@ class Menu extends Phaser.Scene {
     }
 
     goPlay() {
+        console.log("play started!");
         this.scene.start('Play');
     }
 }

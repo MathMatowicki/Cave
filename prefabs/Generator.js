@@ -27,7 +27,9 @@ class Generator {
     }
 
     createFloor() {
-        let x, y, spr;
+        let x;
+        let y;
+        let spr;
         //draw bigger than camera view height
         let cols = this.cols;
         let rows = this.rows + 1;

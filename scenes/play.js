@@ -12,6 +12,7 @@ class Play extends Phaser.Scene {
         };
 
         this.generator = new Generator(this);
+
         //flags
         this.allow_input = false;
         this.is_pause = false;
@@ -33,7 +34,7 @@ class Play extends Phaser.Scene {
         //cam moves down
         this.updateCamera();
         //draw new tiles
-        //delete last tiles
+        //delete passed tiles
         this.generator.update();
     }
     //Cam
